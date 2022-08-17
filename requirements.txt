@@ -1,0 +1,10 @@
+click==8.0
+streamlit
+streamlit-folium
+xarray
+matplotlib
+netcdf4
+tensorflow
+openpyxl
+rioxarray
+
