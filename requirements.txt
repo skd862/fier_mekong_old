@@ -8,4 +8,4 @@ tensorflow
 openpyxl
 rioxarray
 geemap
-hydraflood
+hydrafloods
