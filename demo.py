@@ -20,8 +20,12 @@ folium.Map.add_layer_control = geeMap.add_layer_control
 
 # Reset Output folder
 dir = 'output'
-for f in os.listdir(dir):
-    os.remove(os.path.join(dir, f))
+if os.path.isdir(dir):
+    for f in os.listdir(dir):
+        os.remove(os.path.join(dir, f))
+else:
+    os.mkdir(dir)
+
 
 def sheet_out(url):
     return url.replace("/edit#gid=", "/export?format=csv&gid=")
